@@ -13,3 +13,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore development configuration of environment
+config/initializers/01_environment_vars.rb
