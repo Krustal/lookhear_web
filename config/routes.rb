@@ -1,5 +1,8 @@
 Lookhear::Application.routes.draw do
+  resources :tours
+
   devise_for :users
+
   match 'private' => 'application#private'
 
   # The priority is based upon order of creation:
