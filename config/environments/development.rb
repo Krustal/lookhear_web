@@ -1,7 +1,5 @@
 Lookhear::Application.configure do
-  ENV['AWS_ACCESS_KEY'] = 'AKIAISLSU7SVRHOOJ3XQ'
-  ENV['AWS_SECRET_KEY_ID'] = 'tJyu2TnkgoCgOaDGiaYwTNOdmWHSPBq+je5xP7Jd'
-  ENV['S3_BUCKET_NAME'] = 'lookhear'
+
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on

@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130407071023) do
+ActiveRecord::Schema.define(:version => 20130407164636) do
+
+  create_table "materials", :force => true do |t|
+    t.string   "title"
+    t.string   "file"
+    t.string   "file_type"
+    t.integer  "tour_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "tours", :force => true do |t|
     t.string   "title"

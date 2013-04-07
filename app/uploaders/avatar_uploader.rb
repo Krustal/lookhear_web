@@ -1,5 +1,5 @@
 # encoding: utf-8
-
+# unused atm
 class AvatarUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:

@@ -3,6 +3,7 @@
 <p>
   <b>Title:</b>
   <%= @tour.title %>
+  <%= link_to "materials", tour_materials_path(@tour) %>
 </p>
 
 <%= link_to 'Edit', edit_tour_path(@tour) %> |

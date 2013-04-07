@@ -1,5 +1,10 @@
 Lookhear::Application.routes.draw do
-  resources :tours
+  resources :materials
+
+
+  resources :tours do
+    resources :materials
+  end
 
   devise_for :users
 
