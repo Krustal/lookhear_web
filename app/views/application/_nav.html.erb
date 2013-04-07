@@ -1,9 +1,25 @@
-<ul>
-  <% if user_signed_in? %>
-    <li><%= link_to "account", edit_user_registration_path %></li>
-    <li><%= link_to "sign-out", destroy_user_session_path, method: :delete %></li>
-  <% else %>
-    <li><%= link_to "login", new_user_session_path %></li>
-    <li><%= link_to "register", user_registration_path %></li>
-  <% end %>
-</ul>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <%= link_to "Look Hear", root_path, class: 'brand' %>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <% if user_signed_in? %>
+            <li><%= link_to "account", edit_user_registration_path %></li>
+            <li><%= link_to "sign-out", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to "login", new_user_session_path %></li>
+            <li><%= link_to "register", user_registration_path %></li>
+          <% end %>
+        </ul>
+      </div>
+
+    </div><!-- container -->
+  </div>
+</div>
