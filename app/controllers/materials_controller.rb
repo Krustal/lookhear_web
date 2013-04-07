@@ -1,6 +1,6 @@
 class MaterialsController < ApplicationController
   def get_tour
-    @tour = current_user.tour.where(id: params[:tour_id).first
+    @tour = current_user.tour.where(id: params[:tour_id]).first
   end
   # GET /materials
   # GET /materials.json
